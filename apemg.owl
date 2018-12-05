@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#"
+     xml:base="http://www.github.com/ricardobrunoc/ontologia/apemg.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Anuidades -->
+
+    <owl:Class rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Anuidades">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Socios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Certificados -->
+
+    <owl:Class rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Certificados">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos -->
+
+    <owl:Class rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Inscritos -->
+
+    <owl:Class rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Inscritos">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#MinhasClasses -->
+
+    <owl:Class rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#MinhasClasses"/>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Socios -->
+
+    <owl:Class rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Socios">
+        <rdfs:subClassOf rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#MinhasClasses"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#carga_horaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#carga_horaria">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Certificados"/>
+        <owl:topDataProperty xml:lang="pt">60h</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#categoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#categoria">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Inscritos"/>
+        <owl:topDataProperty xml:lang="pt">Estudante</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#cpf -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#cpf">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Socios"/>
+        <owl:topDataProperty xml:lang="pt">11122233366</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#data_evento -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#data_evento">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos"/>
+        <owl:topDataProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 de novembro de 2018</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#data_pagamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#data_pagamento">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Anuidades"/>
+        <owl:topDataProperty xml:lang="pt">01/01/2019</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#email -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#email">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Socios"/>
+        <owl:topDataProperty xml:lang="pt">teste@mail.com</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#inscrito -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#inscrito">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Certificados"/>
+        <owl:sameAs rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_inscrito"/>
+        <owl:topDataProperty xml:lang="pt">José da Silva</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#instituicao -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#instituicao">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Inscritos"/>
+        <owl:topDataProperty xml:lang="pt">UFMG</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#local_evento -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#local_evento">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos"/>
+        <owl:topDataProperty xml:lang="pt">Escola de Ciencia da Informação</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#metodo_pagamento -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#metodo_pagamento">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Anuidades"/>
+        <owl:topDataProperty xml:lang="pt">Boleto</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_associado -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_associado">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Socios"/>
+        <owl:topDataProperty xml:lang="pt">Eduardo Nunes Souza</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_evento -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_evento">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Eventos"/>
+        <owl:topDataProperty xml:lang="pt">EREE - Encontro Regional dos Estudantes de Espanhol</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_inscrito -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#nome_inscrito">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Inscritos"/>
+        <owl:topDataProperty xml:lang="es">Antonio Ramirez</owl:topDataProperty>
+        <owl:topDataProperty xml:lang="en">John Smith</owl:topDataProperty>
+        <owl:topDataProperty xml:lang="pt">José da Silva</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#participacao -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#participacao">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Certificados"/>
+        <owl:topDataProperty xml:lang="pt">Ouvinte</owl:topDataProperty>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.github.com/ricardobrunoc/ontologia/apemg.owl#vigencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#vigencia">
+        <rdf:type rdf:resource="http://www.github.com/ricardobrunoc/ontologia/apemg.owl#Anuidades"/>
+        <owl:topDataProperty xml:lang="pt">2019</owl:topDataProperty>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
